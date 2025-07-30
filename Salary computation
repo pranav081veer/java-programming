@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+      Scanner sc=new Scanner(System.in);
+        int bas=sc.nextInt();
+        float hra,da,gs;
+        if(bas>=15000){
+            hra=5000;
+            da=(float)(0.98*bas);
+        }
+        else{
+            hra=(float)(0.15*bas);
+            da=(float)(0.90*bas);
+        }gs=(float)(bas+hra+da);
+        System.out.printf("%.2f",gs);
+        
+    }
+}
