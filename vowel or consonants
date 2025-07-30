@@ -1,0 +1,17 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        char a1=sc.next().charAt(0);
+        if(a1=='a'||a1=='e'||a1=='i'||a1=='o'||a1=='u'||a1=='A'||a1=='E'||a1=='O'||a1=='I'||a1=='U'){
+            System.out.println("The Character "+ a1+" is Vowel");
+        }
+        else{
+            System.out.println("The Character "+a1+" is Consonant");
+        }
+        
+    }
+}
