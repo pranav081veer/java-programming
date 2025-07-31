@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner pv=new Scanner(System.in);
+        int a=pv.nextInt();
+        int sum=0,b;
+        
+        if(a>99){
+             while(a>0){
+            b=a%10;
+            sum=sum+b;
+                 a=a/10;
+        
+             }
+        System.out.println("Sum of digit is "+sum);}
+        else 
+            System.out.println("Invalid Input");}
+    }
