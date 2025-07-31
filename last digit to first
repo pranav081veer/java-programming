@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+       Scanner pv=new Scanner(System.in);
+        int a=pv.nextInt();
+        int b,temp;
+        if(a>0&&a<100){
+            b=a%10;
+            temp=a/10;
+            System.out.println(b+""+temp);
+        }else if(a>99) {
+            while(a<100){
+                a=a%10;
+            }b=a%10;
+            temp=a/10;
+           System.out.println(b+""+temp);
+        }
+    }}
