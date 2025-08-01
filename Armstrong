@@ -1,0 +1,24 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+         Scanner pv=new Scanner(System.in);
+        int n=pv.nextInt(),a,b,c=0,d;
+        d=n;
+        if(n>=100 && n<=999){
+            while(n>0){
+                a=n%10;
+                b=a*a*a;
+                c=c+b;
+                n=n/10;
+                if(d==c){
+                    System.out.println("Yes");
+                }
+            }
+        }else
+            System.out.println("No");
+        
+    }
+}
