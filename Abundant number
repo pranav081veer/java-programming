@@ -1,0 +1,19 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+    public static void main(String[] args) {
+         Scanner pv=new Scanner(System.in);
+        int a=pv.nextInt();
+        int sum=0,b=1;
+        while(a>b){
+           if(a%b==0){
+               sum+=b;}
+        b++;}
+        
+        if(sum>a)
+            System.out.println("Abundant Number");    
+        else
+            System.out.println("Not Abundant Number");     
+        }
+}
